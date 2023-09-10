@@ -7,8 +7,10 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 })
 export class MyAppComp1Component implements OnChanges, OnInit {
   @Input()  name!: string;
+  text1!: string;
   
   constructor() {
+    this.text1 = '';
     console.log('MyAppComp1Component: constructor');
   }
 
@@ -23,6 +25,5 @@ export class MyAppComp1Component implements OnChanges, OnInit {
   }
   ngOnInit(): void {
     console.log('MyAppComp1Component: ngOnInit');
-    
   }
 }
